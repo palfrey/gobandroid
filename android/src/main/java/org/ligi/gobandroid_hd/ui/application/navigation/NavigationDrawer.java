@@ -71,6 +71,9 @@ public class NavigationDrawer implements OnItemClickListener {
         items.add(new Item(R.id.preferences, R.string.preferences, R.drawable.preferences));
         items.add(new Item(R.id.help, R.string.help, R.drawable.help));
 
+        items.add(new Category(R.string.ONLINE));
+        items.add(new Item(R.id.dragon, R.string.dragon, R.drawable.dashboard_dragon));
+
         return new MenuAdapter(items);
     }
 
